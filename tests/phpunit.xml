@@ -1,0 +1,14 @@
+<?php
+
+use PHPUnit\Framework\TestCase;
+use App\Service\ExampleService;
+
+class ExampleTest extends TestCase
+{
+    public function testSomething()
+    {
+        $service = new ExampleService();
+        $result = $service->someMethod();
+        $this->assertEquals('expected result', $result);
+    }
+}
